@@ -11,11 +11,13 @@
   </style>
 </head>
 
+
 <body>
         <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Latitude</a>
+                    <a class="navbar-brand" href="index.html">Lattitude</a>
                   </div>
                     <ul class="nav navbar-nav navbar-right">
                       <li class="dropdown">
@@ -33,50 +35,50 @@
                   </div>
                 </div>
         </nav>
-        <br>
-        <br>
-        <br>
+    <br>
+    <br>
+    <br>
 
-        <!-- Container 1 -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-sm-12">
-                    <h1>Summary: Latitude vs. X</h1>
-                    <hr>
-                    <br>
-                    <a href="maxtemp.html">
-                      <img src="lat_vs_maxtemp.png" alt="maxtemp" height="200" width="200" align = "left"> </a> 
-                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis,
-                    we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
-                    </p>
-                    <p>After assembling the dataset, we used MatplotLib to plot various aspects of the weather vs latitude.  Factors we looked at included:
-                    temperature, cloudiness, humidity, and wind speed.  This site provides the source data and visualizations created as part of the 
-                    analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12">
+
+
+
+    <!-- Container 1 -->
+    <div class="container">
+            <!--<div class="row">-->
+          <div class="row">
+            <div class="col-lg-8 col-sm-12">
+              <h1>Max Temperature</h1>
+              <hr>
+                <img src="lat_vs_maxtemp.png" alt="maxtemp" height="400" width="600" align="center">
+                <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+                More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year
+                than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year the data was gathered.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
                     <h2>Visualizations</h2>
                     <hr>
                         <div class= "col-md-6 col-sm-3">
                           <a href="maxtemp.html">
-                            <img id ="pic1" src="lat_vs_maxtemp.png" alt="maxtemp" height="150" width="150"> </a>
+                            <img class ="boxx" id = "pic1" src="lat_vs_maxtemp.png" alt="maxtemp" height="150" width="150"> </a>
                         </div> 
                         <div class= "col-md-6 col-sm-3">
-                          <a href="Humidity.html">
+                          <a href="humidity.html">
                             <img id ="pic2" src="lat_vs_humidity.png" alt="humidity" height="150" width="150"></a>
                         </div> 
                         <div class= "col-md-6 col-sm-3">
-                          <a href="Cloudiness.html">
+                          <a href="cloudiness.html">
                             <img id = "pic3" src="lat_vs_cloudiness.png" alt="cloudiness" height="150" width="150"></a>
                         </div> 
                         <div class= "col-md-6 col-sm-3">
                           <a href="windspeed.html">
                             <img id = "pic4" src="lat_vs_windspeed.png" alt="windspeed" height="150" width="150"></a>
                         </div> 
-                </div>
             </div>
         </div>
+    </div>
 </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+                
